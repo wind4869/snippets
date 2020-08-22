@@ -19,7 +19,7 @@
          Don't mention the IDE compatibility. E.g. don't say "Adds support to IntelliJ IDEA for..."
          Displayed in the "Plugins" settings dialog and the plugin repository Web interface.
          Simple HTML elements can be included between <![CDATA[  ]]> tags. -->
-    <description><![CDATA[Adds supports for code snippets management.]]></description>
+    <description><![CDATA[Adds support for code snippet management.]]></description>
 
     <!-- Plugin version
          Recommended format is BRANCH.BUILD.FIX (MAJOR.MINOR.FIX)
@@ -30,7 +30,7 @@
          The optional "url" attribute specifies the URL of the vendor homepage.
          The optional "email" attribute specifies the e-mail address of the vendor.
          Displayed in the "Plugins" settings dialog and the plugin repository Web interface. -->
-    <vendor email="windv587@gmail.com" url="http://wind4869.com">wind4869</vendor>
+    <vendor email="windv587@gmail.com" url="https://wind4869.com">wind4869</vendor>
 
     <!-- Mandatory dependencies on plugins or modules.
          The FQN module names in <depends> elements are used to determine IDE compatibility for the plugin.
@@ -41,14 +41,8 @@
 
     <!-- Actions -->
     <actions>
-        <action id="com.wind4869.SnippetsAction"
-                class="com.wind4869.SnippetsAction"
-                text="Test Action Text"
-                description="Test action description">
-            <override-text place="MainMenu" text="Test Action Text"/>
-            <keyboard-shortcut first-keystroke="control alt A" second-keystroke="C" keymap="$default"/>
-            <mouse-shortcut keystroke="control button3 doubleClick" keymap="$default"/>
-            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        <action id="ShowSnippets" class="com.wind4869.SnippetsAction">
+            <keyboard-shortcut first-keystroke="meta F4" keymap="Mac OS X 10.5+"/>
         </action>
     </actions>
 
