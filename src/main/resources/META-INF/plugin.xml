@@ -19,7 +19,12 @@
          Don't mention the IDE compatibility. E.g. don't say "Adds support to IntelliJ IDEA for..."
          Displayed in the "Plugins" settings dialog and the plugin repository Web interface.
          Simple HTML elements can be included between <![CDATA[  ]]> tags. -->
-    <description><![CDATA[Adds support for code snippet management.]]></description>
+    <description>
+        <![CDATA[
+        Adds support for code snippet management.
+        Reads Java files from a directory, then displays them in IDE like Bookmarks.
+        You must put your Java files in the directory of $HOME/workspace/snippets-java. ]]>
+    </description>
 
     <!-- Plugin version
          Recommended format is BRANCH.BUILD.FIX (MAJOR.MINOR.FIX)
