@@ -48,8 +48,10 @@ public class SnippetsManager {
         }
         for (File file : files) {
             String absolutePath = file.getAbsolutePath();
-            if (file.isDirectory()) {
-                addSnippets(absolutePath);
+            if (file.isDirectory() && !file.getName().contains(".")) {
+                if (!file.getName().contains(".")) {
+                    addSnippets(absolutePath);
+                }
             } else if (absolutePath.endsWith(".java")) {
                 addSnippet(absolutePath);
             }
