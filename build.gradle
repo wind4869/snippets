@@ -4,12 +4,12 @@ plugins {
 }
 
 group 'com.wind4869'
-version '1.0.1'
+version '1.0.2'
 
 repositories {
     mavenCentral()
 }
 
 intellij {
-    version '2021.2'
+    version '2021.3'
 }
